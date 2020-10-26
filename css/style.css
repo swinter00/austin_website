@@ -1,0 +1,49 @@
+#main_main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main_img {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.main_content {
+    align-self: center;
+    justify-self: center;
+}
+
+#main_headline {
+}
+
+#main_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#main_list {
+}
+
+#main_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
