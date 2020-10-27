@@ -22,26 +22,6 @@
     }
 }
 
-@-webkit-keyframes link_hover {
-    0% {
-        font-size: 1em;
-    }
-  
-    100% {
-      font-size: 1.2em;
-    }
-}
-  
-@keyframes link_hover {
-    0% {
-        font-size: 1em;
-    }
-    
-    100% {
-      font-size: 1.2em;
-    }
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #145374; 
@@ -60,14 +40,12 @@ body {
 .nav_link {
     color: #00334e;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .nav_link:hover, .nav_link:focus {
     color: #ee6f57;
     text-decoration: underline;
-    animation-name: link_hover;
-    animation-duration: 1s;
 }
 
 #main_main {
@@ -83,7 +61,7 @@ body {
 
 #main_main p {
     margin-top: 5px;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.25em;
 }
 
