@@ -115,6 +115,7 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     row-gap: 15px;
+    margin-top: 30px;
 }
 
 #about_headline {
