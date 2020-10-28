@@ -1,28 +1,96 @@
 @-webkit-keyframes muthybaby_intro {
     0% {
-      width: 70vw;
-      height: 70vw;
-      opacity: 0.3;
+        width: 70vw;
+        height: 70vw;
+        opacity: 0.3;
     }
   
     100% {
-      width: 80vw;
-      height: 80vw;
-      opacity: 1;
+        width: 80vw;
+        height: 80vw;
+        opacity: 1;
     }
 }
   
 @keyframes muthybaby_intro {
     0% {
-      width: 70vw;
-      height: 70vw;
-      opacity: 0.3;
+        width: 70vw;
+        height: 70vw;
+        opacity: 0.3;
     }
   
     100% {
+        width: 80vw;
+        height: 80vw;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes in_from_left {
+    0% {
+        padding-left: 300px; 
+    }
+
+    100% {
+        padding-left: 0;
+  }
+}
+  
+@keyframes in_from_left {
+    0% {
+        padding-left: 300px; 
+    }
+
+    100% {
+        padding-left: 0;
+  }
+}
+
+@-webkit-keyframes in_from_right {
+    0% {
+        margin-right: 100vw;
+        margin-left: 0;
+        width: 300vw; 
+    }
+
+    100% {
+        margin-right: 0vw;
+        margin-left: 0;
+        width: 80vw;
+  }
+}
+  
+@keyframes in_from_right {
+    0% {
+      margin-right: 100vw;
+      margin-left: 0;
+      width: 300vw;
+    }
+  
+    100% {
+      margin-right: 0vw;
+      margin-left: 0;
       width: 80vw;
-      height: 80vw;
-      opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide_up {
+    0% {
+        margin-top: 200px;
+    }
+
+    100% {
+        margin-top: 8px;
+  }
+}
+  
+@keyframes slide_up {
+    0% {
+      margin-top: 200px;
+    }
+  
+    100% {
+      margin-top: 8px
     }
 }
 
@@ -38,7 +106,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .nav_link {
@@ -58,16 +126,13 @@ body {
     flex-direction: column;
     align-content: space-around;
     justify-content: center;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #main_main h1 {
     font-size: 2.5em;
-}
-
-#main_main p {
-    margin-top: 5px;
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 700;
 }
 
 #main_img {
@@ -81,13 +146,49 @@ body {
     border-color: #00334e;
     margin-top: 30px;
     animation-name: muthybaby_intro;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main_content {
     align-self: center;
     justify-self: center;
+    font-weight: 600;
     margin: 20px;
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+#main_main div {
+    background-color: #f6f5f5;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-style: solid;
+    border-color: #ee6f57;
+    font-style: italic;
+}
+
+#main1, #main3 {
+    justify-content: flex-start;
+    align-content: center;
+    align-self: flex-end;
+    border-radius: 30px 0px 0px 30px;
+    border-width: 3px 0px 3px 3px;
+    animation-name: slide_up;
+    animation-duration: 2s;
+}
+
+#main2 {
+    justify-content: flex-end;
+    align-content: center;
+    border-radius: 0px 30px 30px 0px;
+    border-width: 3px 3px 3px 0px;
+    animation-name: slide_up;
+    animation-duration: 2s;
 }
 
 #main_body {
