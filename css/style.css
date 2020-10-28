@@ -1,27 +1,27 @@
 @-webkit-keyframes muthybaby_intro {
     0% {
-      width: 60%;
-      height: 60%;
-      opacity: 0.1;
+      width: 70vw;
+      height: 70vw;
+      opacity: 0.3;
     }
   
     100% {
-      width: 70%;
-      height: 70%;
+      width: 80vw;
+      height: 80vw;
       opacity: 1;
     }
 }
   
 @keyframes muthybaby_intro {
     0% {
-      width: 60%;
-      height: 60%;
-      opacity: 0.1;
+      width: 70vw;
+      height: 70vw;
+      opacity: 0.3;
     }
   
     100% {
-      width: 70%;
-      height: 70%;
+      width: 80vw;
+      height: 80vw;
       opacity: 1;
     }
 }
@@ -45,7 +45,7 @@ body {
     color: #00334e;
     text-decoration: none;
     font-weight: 300;
-    font-size: 110%;
+    font-size: 1.25em;
 }
 
 .nav_link:hover, .nav_link:focus {
@@ -61,21 +61,21 @@ body {
 }
 
 #main_main h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 #main_main p {
     margin-top: 5px;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #main_img {
     align-self: center;
     justify-self: center;
     border-radius: 50%;
-    height: 70%;
-    width: 70%;
+    height: 80vw;
+    width: 80vw;
     border-width: 5px;
     border-style: solid;
     border-color: #00334e;
