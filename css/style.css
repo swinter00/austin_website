@@ -124,7 +124,7 @@ body {
     font-style: italic;
 }
 
-#orange {
+.orange {
     color: #ee6f57;
 }
 
@@ -160,10 +160,10 @@ footer {
     justify-content: center;
     align-content: center;
     bottom: 5px;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: -1;
-    padding-top: 5px;
+    padding-top: 40px;
 }
 
 footer p {
@@ -174,34 +174,75 @@ footer p {
 
 #about_main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
     row-gap: 15px;
-    margin-top: 30px;
+    padding-top: 25px;
+    width: 100vw;
 }
 
 #about_headline {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: 1.8em;
 }
 
 #about_bio {
     grid-row: 2 / span 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-content: center;
+    justify-self: center;
+    width: 85vw;
+    background-color: #145374;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about_hobbies {
     grid-row: 4 / span 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-content: center;
+    justify-self: center;
+    width: 85vw;
+    background-color: #145374;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about_hobbies p, #about_bio p {
+    width: 75vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+#about_imgs {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #ee6f57;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    height: 90vw;
+}
+
+.about_img {
+    width: 40vw;
+    height: 40vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #music_main {
