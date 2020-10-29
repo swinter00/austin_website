@@ -52,6 +52,18 @@ body {
     background-color: #00334e;
 }
 
+.skip {
+    color: #f6f5f5;
+    margin: 3px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.skip:hover, .skip:focus {
+    color: #ee6f57;
+    text-decoration: underline;
+}
+
 .navigation_list {
     display: flex;
     flex-direction: row;
@@ -187,7 +199,8 @@ footer p {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 1.8em;
+    font-size: 1.9em;
+    padding-bottom: 10px;
 }
 
 #about_bio {
