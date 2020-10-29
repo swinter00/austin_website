@@ -26,54 +26,6 @@
     }
 }
 
-@-webkit-keyframes in_from_left {
-    0% {
-        padding-left: 300px; 
-    }
-
-    100% {
-        padding-left: 0;
-  }
-}
-  
-@keyframes in_from_left {
-    0% {
-        padding-left: 300px; 
-    }
-
-    100% {
-        padding-left: 0;
-  }
-}
-
-@-webkit-keyframes in_from_right {
-    0% {
-        margin-right: 100vw;
-        margin-left: 0;
-        width: 300vw; 
-    }
-
-    100% {
-        margin-right: 0vw;
-        margin-left: 0;
-        width: 80vw;
-  }
-}
-  
-@keyframes in_from_right {
-    0% {
-      margin-right: 100vw;
-      margin-left: 0;
-      width: 300vw;
-    }
-  
-    100% {
-      margin-right: 0vw;
-      margin-left: 0;
-      width: 80vw;
-    }
-}
-
 @-webkit-keyframes slide_up {
     0% {
         margin-top: 200px;
@@ -133,6 +85,7 @@ body {
 #main_main h1 {
     font-size: 2.5em;
     font-weight: 700;
+    padding-top: 15px;
 }
 
 #main_img {
@@ -154,9 +107,8 @@ body {
     align-self: center;
     justify-self: center;
     font-weight: 600;
-    margin: 20px;
-    margin-top: 5px;
     font-size: 2em;
+    margin: 15px;
 }
 
 #main_main div {
@@ -176,7 +128,7 @@ body {
     justify-content: flex-start;
     align-content: center;
     align-self: flex-end;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 50px 0px 0px 50px;
     border-width: 3px 0px 3px 3px;
     animation-name: slide_up;
     animation-duration: 2s;
@@ -185,7 +137,7 @@ body {
 #main2 {
     justify-content: flex-end;
     align-content: center;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 50px 50px 0px;
     border-width: 3px 3px 3px 0px;
     animation-name: slide_up;
     animation-duration: 2s;
@@ -204,7 +156,8 @@ footer {
     align-content: center;
     bottom: 5px;
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index: -1;
 }
 
 footer p {
