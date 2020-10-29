@@ -48,8 +48,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #145374; 
-    background-color: #f6f5f5;
+    color: #f6f5f5; 
+    background-color: #00334e;
 }
 
 .navigation_list {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav_link {
-    color: #00334e;
+    color: #f6f5f5;
     text-decoration: none;
     font-weight: 300;
     font-size: 1.25em;
@@ -96,7 +96,7 @@ body {
     width: 80vw;
     border-width: 5px;
     border-style: solid;
-    border-color: #00334e;
+    border-color: #f6f5f5;
     margin-top: 30px;
     animation-name: muthybaby_intro;
     animation-duration: 2s;
@@ -112,7 +112,7 @@ body {
 }
 
 #main_main div {
-    background-color: #f6f5f5;
+    background-color: #145374;
     margin-top: 8px;
     margin-bottom: 8px;
     display: flex;
@@ -120,8 +120,12 @@ body {
     width: 90vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-style: solid;
-    border-color: #ee6f57;
+    border-color: #f6f5f5;
     font-style: italic;
+}
+
+#orange {
+    color: #ee6f57;
 }
 
 #main1, #main3 {
@@ -141,6 +145,7 @@ body {
     border-width: 3px 3px 3px 0px;
     animation-name: slide_up;
     animation-duration: 2s;
+    color: #ee6f57
 }
 
 #main_body {
@@ -158,6 +163,7 @@ footer {
     position: fixed;
     width: 100%;
     z-index: -1;
+    padding-top: 5px;
 }
 
 footer p {
