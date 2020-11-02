@@ -67,6 +67,7 @@ body {
     margin-right: auto;
     text-decoration: none;
     font-weight: 100;
+    opacity: 0;
 }
 
 .skip:hover, .skip:focus {
@@ -146,6 +147,7 @@ body {
     background-color: #ee6f57;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     height: 90vw;
+    width: 100vw;
 }
 
 #home_main {
@@ -378,7 +380,7 @@ footer p {
     grid-column: 1 / span 2;
 }
 
-#gigs_main div {
+#gigs_main .right_stick, #gigs_main .left_stick {
     background-color: #145374;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -430,6 +432,10 @@ footer p {
     justify-self: center;
     font-size: 1.25em;
     margin: 15px;
+}
+
+#gigs_imgs {
+    margin-top: 15px;
 }
 
 /* Pallette: https://colorhunt.co/palette/201897 */
