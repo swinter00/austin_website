@@ -52,6 +52,13 @@ body {
     background-color: #00334e;
 }
 
+.current_page {
+    font-size: 1.4em;
+    color: #ee6f57;
+    text-decoration: none;
+    font-weight: 550;
+}
+
 .skip {
     color: #f6f5f5;
     margin-top: 5px;
@@ -88,7 +95,7 @@ body {
     text-decoration: underline;
 }
 
-#main_main {
+#home_main {
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -97,13 +104,13 @@ body {
     overflow: hidden;
 }
 
-#main_main h1 {
+#home_main h1 {
     font-size: 2.5em;
     font-weight: 700;
     padding-top: 15px;
 }
 
-#main_img {
+#home_img {
     align-self: center;
     justify-self: center;
     border-radius: 50%;
@@ -118,7 +125,7 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.main_content {
+.home_content {
     align-self: center;
     justify-self: center;
     font-weight: 600;
@@ -126,7 +133,7 @@ body {
     margin: 15px;
 }
 
-#main_main div {
+#home_main div {
     background-color: #145374;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -143,7 +150,7 @@ body {
     color: #ee6f57;
 }
 
-#main1, #main3 {
+#home1, #home3 {
     justify-content: flex-start;
     align-content: center;
     align-self: flex-end;
@@ -153,7 +160,7 @@ body {
     animation-duration: 2s;
 }
 
-#main2 {
+#home2 {
     justify-content: flex-end;
     align-content: center;
     border-radius: 0px 50px 50px 0px;
@@ -163,7 +170,7 @@ body {
     color: #ee6f57
 }
 
-#main_body {
+#home_body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,9 +213,7 @@ footer p {
     padding-bottom: 10px;
 }
 
-#about_bio {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 2;
+.page_card { /*about_bio, about_hobbies, video_desc, video_section (dir=column) */
     display: flex;
     justify-content: center;
     align-content: center;
@@ -221,19 +226,14 @@ footer p {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+#about_bio {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+}
+
 #about_hobbies {
     grid-row: 4 / span 1;
     grid-column: 1 / span 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-    width: 85vw;
-    background-color: #145374;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about_hobbies p, #about_bio p {
@@ -273,16 +273,6 @@ footer p {
 #video_desc {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-    width: 85vw;
-    background-color: #145374;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #video_desc p, #video_section p {
@@ -324,16 +314,14 @@ footer p {
 #video_section {
     grid-row: 4 / span 1;
     grid-column: 1 / span 2;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+}
+
+#video_section iframe {
+    width: 80vw;
+    height: 60vw;
+    align-self: center;
     justify-self: center;
-    width: 85vw;
-    background-color: #145374;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
