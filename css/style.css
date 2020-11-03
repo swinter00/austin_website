@@ -277,7 +277,7 @@ footer p {
 
 #video_main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
 }
 
 #video_desc {
@@ -285,7 +285,7 @@ footer p {
     grid-column: 1 / span 2;
 }
 
-#video_section h2 {
+#video_section1 h2, #video_section2 h2 {
     align-self: center;
     justify-self: center;
     padding-top: 5vw;
@@ -313,13 +313,19 @@ footer p {
     border-style: solid;
 }
 
-#video_section {
+#video_section1 {
     grid-row: 4 / span 1;
     grid-column: 1 / span 2;
     flex-direction: column;
 }
 
-#video_section iframe {
+#video_section2 {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+    flex-direction: column;
+}
+
+#video_section1 iframe, #video_section2 iframe {
     width: 80vw;
     height: 60vw;
     align-self: center;
@@ -327,27 +333,30 @@ footer p {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-#thanks_list {
+.feature_list {
     background-color: #00334e;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     width: 70vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-self: center;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-#thanks_list ul {
+.feature_list ul {
     padding-top: 5px;
+    flex-wrap: wrap;
 }
 
-#thanks_list h3 {
+.feature_list h3 {
     padding-bottom: 5px;
+    align-self: center;
 }
 
 #music_main {
@@ -448,31 +457,60 @@ footer p {
 }
 
 #contact_form {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 10px;
+    margin-left: 15vw;
+    width: 70vw;
 }
 
 #contact_form * {
-    margin-left: 5vw;
+    display: block;
 }
 
 #contact_form label {
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 #contact_form input, #contact_form select, #contact_form textarea {
     margin-bottom: 15px;
     margin-top: 5px;
+    /*border-width: 3px;
+    border-color: #ee6f57;
+    border-style: solid;*/
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact_form textarea {
     height: 75vw;
     width: 55vw;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    background-color: #ee6f57;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    color: #f6f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    border-width: 3px;
+    border-radius: 50px;
+    border-color: #f6f5f5;
+    border-style: solid;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Pallette: https://colorhunt.co/palette/201897 */
