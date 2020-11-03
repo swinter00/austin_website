@@ -438,4 +438,41 @@ footer p {
     margin-top: 15px;
 }
 
+#contact_main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+#contact_headline {
+    font-size: 1.75em;
+}
+
+#contact_form {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    padding-top: 15px;
+}
+
+#contact_form * {
+    margin-left: 5vw;
+}
+
+#contact_form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#contact_form input, #contact_form select, #contact_form textarea {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#contact_form textarea {
+    height: 75vw;
+    width: 55vw;
+}
+
 /* Pallette: https://colorhunt.co/palette/201897 */
