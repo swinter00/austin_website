@@ -481,15 +481,20 @@ footer p {
 #contact_form input, #contact_form select, #contact_form textarea {
     margin-bottom: 15px;
     margin-top: 5px;
-    /*border-width: 3px;
-    border-color: #ee6f57;
-    border-style: solid;*/
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact_form input[type=text], #contact_form select {
+    border-radius: 50px;
+    width: 60vw;
+    padding-left: 10px;
+    height: 30px;
+    border-width: 0;
 }
 
 #contact_form textarea {
     height: 75vw;
-    width: 55vw;
+    width: 60vw;
 }
 
 #submit {
