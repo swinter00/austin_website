@@ -455,6 +455,8 @@ footer p {
     align-self: center;
     justify-self: center;
     padding-bottom: 25px;
+    animation-name: fade_in;
+    animation-duration: 1s;
 }
 
 .gigs_content {
@@ -462,11 +464,15 @@ footer p {
     justify-self: center;
     font-size: 1.25em;
     margin: 15px;
+    animation-name: fade_in;
+    animation-duration: 1s;
 }
 
 #gigs_imgs {
     margin-top: 15px;
     height: 170vw;
+    animation-name: fade_in;
+    animation-duration: 1s;
 }
 
 #contact_main {
