@@ -269,8 +269,14 @@ footer p {
     grid-column: 1 / span 2;
 }
 
-.about_img {
+.small_img {
     width: 40vw;
+    height: 40vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.large_img {
+    width: 90vw;
     height: 40vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -361,7 +367,7 @@ footer p {
 
 #music_main {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(4, auto);
 }
 
 #music_ov {
@@ -374,19 +380,11 @@ footer p {
     grid-column: 1 / span 2;
 }
 
-#music_offers {
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 2;
-}
-
-#music_vids {
-    grid-row: 5 / span 1;
-    grid-column: 1 / span 2;
-}
 
 #music_imgs {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
+    height: 140vw;
 }
 
 #gigs_main .right_stick, #gigs_main .left_stick {
@@ -445,6 +443,7 @@ footer p {
 
 #gigs_imgs {
     margin-top: 15px;
+    height: 140vw;
 }
 
 #contact_main {
@@ -528,6 +527,11 @@ footer p {
 #contact_imgs {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
+    height: 140vw;
+}
+
+#the_boys {
+    width: 80vw;
 }
 
 /* Pallette: https://colorhunt.co/palette/201897 */
