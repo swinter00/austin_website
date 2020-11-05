@@ -253,6 +253,11 @@ footer p {
     font-weight: 100;
 }
 
+#about_main * {
+    animation-name: fade_in;
+    animation-duration: 1s;
+}
+
 #about_headline {
     font-size: 2em;
 }
@@ -292,6 +297,11 @@ footer p {
 #video_main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
+}
+
+#video_main * {
+    animation-name: fade_in;
+    animation-duration: 1s;
 }
 
 #video_desc {
@@ -378,6 +388,11 @@ footer p {
     grid-template-rows: repeat(4, auto);
 }
 
+#music_main * {
+    animation-name: fade_in;
+    animation-duration: 1s;
+}
+
 #music_ov {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
@@ -457,6 +472,11 @@ footer p {
 #contact_main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
+}
+
+#contact_main * {
+    animation-name: fade_in;
+    animation-duration: 1s;
 }
 
 #contact_headline {
@@ -541,6 +561,27 @@ footer p {
 #the_boys {
     width: 80vw;
 }
+
+@-webkit-keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0
+    }
+  
+    100% {
+        opacity: 100;
+    }
+}
+
 
 /*
 #contact_imgs .small_img:hover, #contact_imgs .small_img:focus {
