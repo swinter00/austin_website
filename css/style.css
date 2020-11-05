@@ -285,7 +285,7 @@ footer p {
 
 .large_img {
     width: 90vw;
-    height: 40vw;
+    height: 50vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -392,7 +392,7 @@ footer p {
 #music_imgs {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
-    height: 140vw;
+    height: 150vw;
 }
 
 #gigs_main .right_stick, #gigs_main .left_stick {
@@ -451,7 +451,7 @@ footer p {
 
 #gigs_imgs {
     margin-top: 15px;
-    height: 140vw;
+    height: 170vw;
 }
 
 #contact_main {
@@ -541,5 +541,83 @@ footer p {
 #the_boys {
     width: 80vw;
 }
+
+/*
+#contact_imgs .small_img:hover, #contact_imgs .small_img:focus {
+    width: 45vw;
+    height: 45vw;
+    border-color: #f6f5f5;
+    border-width: 0;
+    border-style: solid;
+    animation-name: small_image_hover;
+    animation-duration: 2s;
+}
+
+#contact_imgs .large_img:hover, #contact_imgs .large_img:focus {
+    width: 95vw;
+    height: 55vw;
+    border-color: #f6f5f5;
+    border-width: 0;
+    border-style: solid;
+    animation-name: large_image_hover;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes small_image_hover {
+    0% {
+        width: 40vw;
+        height: 40vw;
+        border-width: 0;
+    }
+  
+    100% {
+        width: 45vw;
+        height: 45vw;
+        border-width: 3px;
+    }
+}
+
+@keyframes small_image_hover {
+    0% {
+        width: 40vw;
+        height: 40vw;
+        border-width: 0;
+    }
+  
+    100% {
+        width: 45vw;
+        height: 45vw;
+        border-width: 3px;
+    }
+}
+  
+@-webkit-keyframes large_image_hover {
+    0% {
+        width: 90vw;
+        height: 50vw;
+        border-width: 0;
+    }
+  
+    100% {
+        width: 95vw;
+        height: 55vw;
+        border-width: 3px;
+    }
+}
+
+@keyframes large_image_hover {
+    0% {
+        width: 90vw;
+        height: 50vw;
+        border-width: 0;
+    }
+  
+    100% {
+        width: 95vw;
+        height: 55vw;
+        border-width: 3px;
+    }
+} 
+*/
 
 /* Pallette: https://colorhunt.co/palette/201897 */
