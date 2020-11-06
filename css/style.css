@@ -61,9 +61,7 @@ body {
 }
 
 .skip {
-    color: #f6f5f5;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    background: none;
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
@@ -71,6 +69,23 @@ body {
     opacity: 100;
     align-self: center;
     justify-self: center;
+}
+
+.skip a{
+    background: #145374;
+    color: #f6f5f5;
+    text-decoration: none;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+  }
+  
+.skip a:focus{
+    top: 0px;
 }
 
 header {
