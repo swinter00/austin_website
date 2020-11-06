@@ -439,6 +439,7 @@ footer p {
     align-self: flex-end;
     border-radius: 50px 0px 0px 50px;
     border-width: 3px 0px 3px 3px;
+    padding-left: 15px;
 }
 
 .left_stick {
@@ -446,6 +447,7 @@ footer p {
     align-content: center;
     border-radius: 0px 50px 50px 0px;
     border-width: 3px 3px 3px 0px;
+    padding-right: 15px;
 }
 
 #gigs_main {
@@ -482,6 +484,18 @@ footer p {
     height: 170vw;
     animation-name: fade_in;
     animation-duration: 1s;
+}
+
+#gigs_details {
+    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
 }
 
 #contact_main {
