@@ -280,12 +280,21 @@ footer p {
 #about_imgs {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
+    height: 285vw;
+    opacity: 80;
 }
 
 .small_img {
     width: 40vw;
     height: 40vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small_img:hover, .small_img:focus, .large_img:hover, .large_img:focus {
+    border-width: 1px;
+    border-color: #f6f5f5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-style: solid;
 }
 
 .large_img {
@@ -564,7 +573,7 @@ footer p {
     height: 140vw;
 }
 
-#the_boys {
+#the_boys, #japan_band {
     width: 80vw;
 }
 
