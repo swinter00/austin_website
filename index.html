@@ -14,9 +14,6 @@
 
     <body id="main_body">
         <header>
-            <div class="skip">
-                <a href="#home_main">Skip to Content</a>
-            </div>
             <nav>
                 <ul class="navigation_list">
                     <li><a class="current_page" class="nav_link" href="index.html">Home</a></li>
@@ -30,8 +27,19 @@
         </header>
 
         <main id="home_main">
-            <img id="home_img" src="images/mb_icon.jpg" alt="Muthybaby Logo"> 
-            <h1 class="home_content">Austin <span class="orange">Muthyala</span></h1>
+            <div class="flip">
+                <div class="flip_inner">
+                    <div class="flip_front">
+                        <img class="home_img" src="images/mb_icon.jpg" alt="Muthybaby logo" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip_back">
+                        <img class="home_img" src="images/about/solo.jpg" alt="Austin playing a solo" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div> 
+            <div id="home_header">
+                <h1 class="home_content">Austin Muthyala</h1>
+            </div>
             <div id="home1">
                 <p class="home_content">Trumpeter</p>
             </div>
@@ -47,3 +55,5 @@
             <p>Website designed by Sam Winter 2020</p>
         </footer>
     </body>
+
+</html>
