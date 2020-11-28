@@ -8,6 +8,7 @@
         <link rel="shortcut icon" type="image/jpg" href="images/mb_icon.jpg"/>
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/site.js"></script>
         <title>Events</title>
     </head>
 
@@ -16,13 +17,18 @@
             <a href="#gigs_main">Skip to Content</a>
         </div>
         <header>
-            <div class="logo">
-                <img class="header_logo" src="images/mb_icon.jpg" alt="Muthybaby Logo"> 
+            <div class="drop">
+                <button onclick="dropdownToggle()" class="drop_button">Menu</button>
+                <nav class="drop_list">
+                    <li><a class="nav_link" href="index.html">Home</a></li>
+                    <li><a class="nav_link" href="about.html">About</a></li>
+                    <li><a class="nav_link" href="music.html">Music</a></li>
+                    <li><a class="nav_link" href="content_creation.html">Videos</a></li>
+                    <li><a class="current_page" class="nav_link" href="gigs_events.html">Gigs</a></li>
+                    <li><a class="nav_link" href="contact.html">Contact</a></li>
+                </nav>
             </div>
-            <div class="title">
-                <h1>Austin Muthyala</h1>
-            </div>
-            <nav>
+            <nav class="nav2">
                 <ul class="navigation_list">
                     <li><a class="nav_link" href="index.html">Home</a></li>
                     <li><a class="nav_link" href="about.html">About</a></li>

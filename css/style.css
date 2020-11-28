@@ -120,24 +120,62 @@ body {
     top: 0px;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .skip:hover, .skip:focus {
     color: #ee6f57;
     text-decoration: underline;
 }
 
-.navigation_list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    padding-top: 15px;
+.drop_button {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    font-size: 1.5em;
+    color: #f6f5f5;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.drop_button:hover, .drop_button:focus {
+    opacity: 0.85;
+    color: #ee6f57;
+    text-decoration: underline;
+}
+
+.drop {
+    display: inline-block;
+    position: relative;
+}
+
+.drop_list {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #00334e;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.drop_list li:nth-child(odd) {
+    background-color: #145374;
+}
+
+.drop_list li {
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.nav2 {
+    display:none;
 }
 
 .nav_link {
@@ -145,6 +183,7 @@ header {
     text-decoration: none;
     font-weight: 300;
     font-size: 1.25em;
+    cursor: pointer;
 }
 
 .nav_link:hover, .nav_link:focus {
@@ -220,7 +259,7 @@ header {
 #home_main h1 {
     font-size: 2.5em;
     font-weight: 700;
-    padding-top: 15px;
+    padding-top: 10px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -267,7 +306,6 @@ header {
     border-width: 5px;
     border-style: solid;
     border-color: #ee6f57;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .home_content {
@@ -423,6 +461,7 @@ footer p {
     border-radius: 50px;
     border-color: #f6f5f5;
     border-style: solid;
+    cursor: pointer;
 }
 
 #video_section1 {
@@ -541,7 +580,7 @@ footer p {
 #gigs_main h1 {
     font-size: 2.5em;
     font-weight: 700;
-    padding-top: 25px;
+    padding-top: 10px;
     align-self: center;
     justify-self: center;
     padding-bottom: 25px;
@@ -620,6 +659,7 @@ footer p {
     margin-bottom: 15px;
     margin-top: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 #reason {
@@ -632,6 +672,7 @@ footer p {
     padding-left: 10px;
     height: 30px;
     border-width: 0;
+    cursor: pointer;
 }
 
 #contact_form textarea {
@@ -641,6 +682,7 @@ footer p {
     font-size: 1em;
     padding: 5px;
     resize: vertical;
+    cursor: pointer;
 }
 
 #submit {
@@ -662,6 +704,7 @@ footer p {
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 #contact_imgs {
@@ -674,10 +717,6 @@ footer p {
     width: 80vw;
 }
 
-.logo, .title {
-    display: none;
-}
-
 @media screen and (prefers-reduced-motion: reduce){
     * {
         animation: none;
@@ -685,8 +724,37 @@ footer p {
 }
 
 @media screen and (min-width: 600px){
+    .navigation_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        padding-top: 15px;
+    }
+
+    .drop, .logo, .title {
+        display: none;
+    }
+
     header {
         font-size: 1.6em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navigation_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        padding-top: 15px;
+    }
+    
+    .page_card {
+        font-size: 1.3em;
     }
 
     .flip {
@@ -702,13 +770,17 @@ footer p {
         font-size: 3.5em;
     }
 
+    .gigs_content {
+        font-size: 2em;
+    }
+
     #home1, #home2, #home3 {
         animation-name: slide_up_tablet;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .headlines, #contact_headline, #about_headline {
+    .headlines, #contact_headline, #about_headline, #gigs_main h1 {
         font-size: 4em;
     }
 
