@@ -125,6 +125,10 @@ body {
     text-decoration: underline;
 }
 
+.name {
+    display: none;
+}
+
 .drop_button {
     width: 30vw;
     margin-left: 35vw;
@@ -737,7 +741,7 @@ footer p {
         display: block;
     }
     
-    .drop {
+    .drop, .name, .logo {
         display: none;
     }
 
@@ -790,6 +794,58 @@ footer p {
 
     footer {
         padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vw;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 20vw;
+        margin-left: 2vw;
+        height: 7vw;
+        text-align: center;
+        background-color: #145374;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 10px;
+    }
+
+    .name img {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .nav2 {
+        width: 75vw;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .navigation_list {
+        width: 75vw;
+        margin-right: 2vw;
+        align-items: center;
+        text-align: center;
+        margin-top: 1vw;
+    }
+
+    .drop {
+        display: none;
+    }
+
+    .nav2 {
+        display: inline;
+        margin-right: 2vw;
+        width: 40vw;
     }
 }
 
