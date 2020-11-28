@@ -9,12 +9,24 @@
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <script src="js/site.js"></script>
         <title>Austin Muthyala</title>
     </head>
 
     <body id="main_body">
         <header>
-            <nav>
+            <div class="drop">
+                <button onclick="dropdownToggle()" class="drop_button">- Menu -</button>
+                <nav class="drop_list">
+                    <li><a class="current_page" class="nav_link" href="index.html">Home</a></li>
+                    <li><a class="nav_link" href="about.html">About</a></li>
+                    <li><a class="nav_link" href="music.html">Music</a></li>
+                    <li><a class="nav_link" href="content_creation.html">Videos</a></li>
+                    <li><a class="nav_link" href="gigs_events.html">Gigs</a></li>
+                    <li><a class="nav_link" href="contact.html">Contact</a></li>
+                </nav>
+            </div>
+            <nav class="nav2">
                 <ul class="navigation_list">
                     <li><a class="current_page" class="nav_link" href="index.html">Home</a></li>
                     <li><a class="nav_link" href="about.html">About</a></li>

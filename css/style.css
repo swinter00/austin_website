@@ -194,7 +194,7 @@ body {
 .main_container {
     display: grid;
     row-gap: 15px;
-    padding-top: 25px;
+    padding-top: 10px;
     width: 100vw;
 }
 
@@ -733,7 +733,11 @@ footer p {
         padding-top: 15px;
     }
 
-    .drop, .logo, .title {
+    .nav2 {
+        display: block;
+    }
+    
+    .drop {
         display: none;
     }
 
