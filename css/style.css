@@ -145,8 +145,6 @@ body {
 
 .drop_button:hover, .drop_button:focus {
     opacity: 0.85;
-    color: #ee6f57;
-    text-decoration: underline;
 }
 
 .drop {
