@@ -582,17 +582,6 @@ footer p {
     overflow: hidden;
 }
 
-#gigs_main h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    padding-top: 10px;
-    align-self: center;
-    justify-self: center;
-    padding-bottom: 25px;
-    animation-name: fade_in;
-    animation-duration: 1s;
-}
-
 .gigs_content {
     align-self: center;
     justify-self: center;
@@ -789,7 +778,7 @@ footer p {
         margin-bottom: 20px;
     }
 
-    .headlines, #contact_headline, #about_headline, #gigs_main h1 {
+    .headlines, #contact_headline, #about_headline {
         font-size: 4em;
     }
 
@@ -822,6 +811,27 @@ footer p {
 
     #about_imgs {
         height: 80vw;
+    }
+
+    .headlines {
+        margin-top: 15px !important;
+        height: 40vw;
+        width: 100vw;
+        background-attachment: fixed; /* Parallax effect */ 
+        background-position: center;    
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        background-image: url("../images/about/pose.jpg");
+    }
+
+    .headlines h1 {
+        height: 10vw;
+        margin-top: 15vw;
+    }
+
+    #gigs_headline {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     footer {
