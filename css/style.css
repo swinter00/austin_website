@@ -68,9 +68,8 @@ body {
 .current_page {
     color: #f6f5f5;
     font-size: 1.25em;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 550;
-    font-style: italic;
 }
 
 .skip {
@@ -310,7 +309,6 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-style: solid;
     border-color: #f6f5f5;
-    font-style: italic;
     animation-name: slide_up;
     animation-duration: 2s;
 }
@@ -709,6 +707,10 @@ footer p {
 }
 
 @media screen and (min-width: 600px){
+    .current_page {
+        text-decoration: overline;
+    }
+
     .extra_img {
         display: block;
     }
@@ -761,6 +763,10 @@ footer p {
 
     .home_content {
         font-size: 3.5em;
+    }
+
+    #home1 p, #home2 p, #home3 p {
+        padding: 20px;
     }
 
     .gigs_content {
