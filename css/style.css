@@ -82,6 +82,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f6f5f5; 
     background-color: #00334e;
+    width: 100vw;
 }
 
 .current_page {
@@ -408,25 +409,21 @@ footer p {
     width: 40vw;
     height: 40vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    opacity: .9;
-    filter: grayscale(1);
+    opacity: .8;
+    animation-name: none !important;
 }
 
 .small_img:hover, .small_img:focus, .large_img:hover, .large_img:focus {
-    border-width: 1px;
-    border-color: #f6f5f5;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    border-style: solid;
     opacity: 1;
-    filter: none;
 }
 
 .large_img {
     width: 90vw;
     height: 50vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    opacity: .9;
-    filter: grayscale(1);
+    opacity: .8;
+    animation-name: none !important;
 }
 
 #video_main {
@@ -713,8 +710,8 @@ footer p {
 
 #the_boys, #japan_band {
     width: 80vw;
-    opacity: .9;
-    filter: grayscale(1);
+    opacity: .8;
+    animation-name: none !important;
 }
 
 @media screen and (prefers-reduced-motion: reduce){
@@ -962,6 +959,83 @@ footer p {
     #about_hobbies {
         grid-column: 1 / span 1;
         grid-row: 4 / span 1;
+    }
+
+    #music_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    #music_ov {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #music_studies {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #music_imgs {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+        width: 100vw !important;
+        height: 25vw !important;
+        margin-top: 4vw !important;
+    }
+
+    #music_imgs .large_img, #music_imgs #japan_band {
+        height: 15vw;
+        width: 25vw;
+    }
+
+    #music_imgs .small_img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    #video_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #channel_link {
+        height: 2vw;
+        width: 15vw;
+        font-size: 1.3em;
+    }
+
+    #video_section1 {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #video_section2 {
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #video_section1 h2, #video_section2 h2 {
+        font-size: 2em;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    #video_section2 h2 {
+        margin-top: 2vw;
+    }
+
+    #video_section1 iframe, #video_section2 iframe {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    #video_section1 p, #video_section2 p, .feature_list {
+        width: 40vw;
+    }
+
+    footer p {
+        font-size: 1.5em;
     }
 }
 
