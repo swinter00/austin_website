@@ -401,8 +401,7 @@ footer p {
 #about_imgs {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
-    height: 285vw;
-    opacity: 80;
+    height: 150vw;
 }
 
 .small_img {
@@ -541,6 +540,11 @@ footer p {
     grid-row: 3 / span 1;
     grid-column: 1 / span 2;
     height: 150vw;
+}
+
+#gigs_headline h1 {
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 
 #gigs_main .right_stick, #gigs_main .left_stick {
@@ -714,6 +718,10 @@ footer p {
     animation-name: none !important;
 }
 
+.extra_img {
+    display: none;
+}
+
 @media screen and (prefers-reduced-motion: reduce){
     * {
         animation: none;
@@ -721,6 +729,10 @@ footer p {
 }
 
 @media screen and (min-width: 600px){
+    .extra_img {
+        display: block;
+    }
+    
     .navigation_list {
         display: flex;
         flex-direction: row;
@@ -908,12 +920,12 @@ footer p {
         font-size: 1.3em;
     }
 
-    .small_img {
+    #about_imgs .small_img {
         height: 10vw;
         width: 10vw;
     }
 
-    .large_img, #japan_band, #the_boys {
+    #about_imgs .large_img, #japan_band, #the_boys {
         height: 10vw;
         width: 15vw;
     }
@@ -984,12 +996,12 @@ footer p {
         margin-top: 4vw !important;
     }
 
-    #music_imgs .large_img, #music_imgs #japan_band {
+    .large_img, #japan_band, .large_img, #the_boys {
         height: 15vw;
         width: 25vw;
     }
 
-    #music_imgs .small_img {
+    .small_img, .small_img {
         height: 15vw;
         width: 15vw;
     }
@@ -1001,7 +1013,7 @@ footer p {
 
     #channel_link {
         height: 2vw;
-        width: 15vw;
+        width: 17vw;
         font-size: 1.3em;
     }
 
@@ -1032,6 +1044,60 @@ footer p {
 
     #video_section1 p, #video_section2 p, .feature_list {
         width: 40vw;
+    }
+
+    #contact_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    #contact_form {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        width: 45vw !important;
+    }
+
+    #contact_form input[type=text], #contact_form select, #contact_form textarea{
+        width: 40vw;
+    }
+
+    #contact_form textarea {
+        height: 20vw;
+    }
+
+    #contact_imgs {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #submit {
+        height: 3vw;
+        width: 15vw;
+        font-size: .8em;
+    }
+
+    #gigs_main .right_stick, #gigs_main .left_stick {
+        width: 63vw;
+    }
+
+    #gigs_imgs {
+        width: 100vw !important;
+        height: 25vw !important;
+        margin-top: 3vw;
+    }
+
+    .home_content {
+        font-size: 4em;
+        padding: 20px;
+    }
+    
+    #home1, #home2, #home3 {
+        width: 70vw;
+        height: 8vw;
+    }
+
+    #home_main h1 {
+        font-size: 8em !important;
     }
 
     footer p {
