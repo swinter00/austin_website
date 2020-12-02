@@ -408,6 +408,8 @@ footer p {
     width: 40vw;
     height: 40vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    opacity: .9;
+    filter: grayscale(1);
 }
 
 .small_img:hover, .small_img:focus, .large_img:hover, .large_img:focus {
@@ -415,12 +417,16 @@ footer p {
     border-color: #f6f5f5;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-style: solid;
+    opacity: 1;
+    filter: none;
 }
 
 .large_img {
     width: 90vw;
     height: 50vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    opacity: .9;
+    filter: grayscale(1);
 }
 
 #video_main {
@@ -707,6 +713,8 @@ footer p {
 
 #the_boys, #japan_band {
     width: 80vw;
+    opacity: .9;
+    filter: grayscale(1);
 }
 
 @media screen and (prefers-reduced-motion: reduce){
@@ -812,7 +820,7 @@ footer p {
     }
 
     .headlines {
-        margin-top: 15px !important;
+        margin-top: 15px;
         height: 40vw;
         width: 100vw;
         background-attachment: fixed; /* Parallax effect */ 
@@ -842,7 +850,7 @@ footer p {
         width: 100vw;
         display: flex;
         flex-direction: row;
-        margin-bottom: 2vw;
+        margin-bottom: 0vw;
     }
 
     .name {
@@ -888,6 +896,72 @@ footer p {
         display: inline;
         margin-right: 2vw;
         width: 40vw;
+    }
+
+    .headlines {
+        background: none;
+        height: 10vw;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .headlines h1 {
+        height: 6vw;
+        margin-top: 2vw;
+        font-size: 1.3em;
+    }
+
+    .small_img {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .large_img, #japan_band, #the_boys {
+        height: 10vw;
+        width: 15vw;
+    }
+
+    .page_card {
+        width: 45vw;;
+        margin: 5px;
+        font-size: 1.5em;
+    }
+
+    .page_card p {
+        padding: 30px;
+    }
+
+    .imgs_container {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: #ee6f57;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        height: 40vw;
+        width: 48vw;
+    }
+
+    #about_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #about_bio {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+    }
+
+    #about_imgs {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 3;
+        height: 40vw;
+    }
+
+    #about_hobbies {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
     }
 }
 
