@@ -700,12 +700,6 @@ footer p {
     display: none;
 }
 
-@media screen and (prefers-reduced-motion: reduce){
-    * {
-        animation-name: none !important;
-    }
-}
-
 @media screen and (min-width: 600px){
     .extras_div {
         display: flex;
@@ -1097,6 +1091,13 @@ footer p {
     footer p {
         font-size: 1.5em;
     }
+}
+
+@media (prefers-reduced-motion: reduce){
+    #home1, #home2, #home3, #the_boys, #japan_band, #contact_main *, #gigs_main .right_stick, #gigs_main .left_stick, #gigs_imgs,
+    #gigs_content, #gigs_headline h1, #music_main *, #video_main *, #about_imgs, #about_main *, .large_img, .small_img {
+        animation-name: none;
+    } 
 }
 
 /* Pallette: https://colorhunt.co/palette/201897 */
